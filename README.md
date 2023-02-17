@@ -23,9 +23,9 @@ Voici quelques-unes des meilleures pratiques pour les tests unitaires de code Ja
 - **Utiliser les annotations `@BeforeEach` et `@AfterEach`** - Les méthodes annotées avec `@BeforeEach` et `@AfterEach` s'exécutent avant et après respectivement pour chaque méthode annotée avec @Test
 - **Conventions de dénomination des tests JUnit** - Les noms de test doivent être perspicaces et les utilisateurs doivent comprendre le comportement et les attentes du test en jetant simplement un coup d'œil au nom lui-même.
   Par exemple - given/when/then format - BDD style :
-		**givenEmployeeObject_whenSaveEmployee_thenReturnSavedEmployee**
-		**givenEmployeesList_whenFindAll_thenReturnListOfEmployees**
-		**givenEmployeeObject_whenUpdateEmployee_thenReturnUpdatedEmployee**
+	- **givenEmployeeObject_whenSaveEmployee_thenReturnSavedEmployee**
+	- **givenEmployeesList_whenFindAll_thenReturnListOfEmployees**
+	- **givenEmployeeObject_whenUpdateEmployee_thenReturnUpdatedEmployee**
 - **Faux services/dépendances externes** - moquer des services externes et simplement tester la logique et l'exécution de notre code pour différents scénarios. Nous pouvons utiliser divers frameworks comme **Mockito** , **EasyMock** et **JMockit** pour se moquer de services externes.
 - **Isoler les tests unitaires des dépendances externes** - Des exemples typiques de dépendances externes sont les bases de données, les services Web et d'autres composants logiciels sur lesquels repose votre code)
 - **Mettre en œuvre l'automatisation des tests** - Avec un outil de build tel que Maven ou Gradle ou un serveur d'intégration continue peut faciliter l'exécution de vos tests unitaires)
